@@ -1,8 +1,6 @@
 # Assignment: W01 Prove: Developer.
 # Author: Manuel Armando Flores Yáñez
 
-from pyray import text_to_lower
-
 # This is one of the characters that will be printed below each row of the board followed by another character
 SEPARATOR_1 = "-"
 
@@ -48,7 +46,7 @@ def start_game(board):
             player = PLAYERS[1]
             toggle_active_player = True
 
-        square = text_to_lower(input(
+        square = (input(
             f"\n{player}'s turn to choose a square (1-{len(board)}): "))
 
         squares_marked = 0
